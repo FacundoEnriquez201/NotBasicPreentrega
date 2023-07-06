@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400&display=swap');
+/* Selector universal */
+
+*{
+    font-family: 'Red Hat Text', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../img/background5.jpg.png);
+    text-align: center;
+}
+/* Selector de eriquetas  */
+h1{
+    font-size: 3em;
+}
+
+/* selector descendente */
+nav a{
+    text-decoration: none;
+}
+nav img{
+    
+    height: 100px;
+    margin: auto;
+}
+nav{
+   background-color: rgb(5, 5, 5,.8);
+   background-size: cover;
+   padding: 6px 30px;
+   width: 100%;
+   position: fixed;
+   left: 0;
+   top: 0;
+   flex
+   display: flex: ;
+   flex-direction:row;
+   justify-content:space-between;
+   align-items:center ;
+}
+
+    nav ul{
+        list-style-type: none;
+        display: flex;
+
+    }
+
+        nav ul li{
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;       
+        } 
+
+/* Bootstrap nav  */
+
+.botonera{
+    background-color: rgb(5, 5, 5,.8);
+    
+}
+    .botonera img{
+    width: 150px;
+}
+    .botonera a{
+        color: white;
+    }
+
+header img{
+    width: 100%;
+}
+.carousel{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+    .carousel img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+    .carousel  figcaption{
+        color: grey;
+        font-size: 1.4em;
+        justify-content: center;
+    }
+    .carousel button{
+        border: none;
+        background-color:black;
+        padding: 6px;
+        color:white;
+        border-radius:4px;
+    }
+    .carousel button:hover{
+        background-color: gray;
+    }
+footer a{
+    text-decoration: none;
+}
+footer img{
+    
+    height: 40px;
+}
+footer{
+    background-color: rgb(5, 5, 5,.8);
+    padding: 6px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    footer ul li a{
+        color: white;
+    }
+
+
+        /* selectores de grupo */
+        h1,h2{
+            color: gray
+            
+        }
+
+
+/* selectores de Clase */
+.text-center{
+    text-align: center;
+}
+
+  
+
+
+/* Selectores de ID */
+
+.container{
+    background-color: black
+    width: ;
+}
+
+/* Productos Destacados */
+.products-sale{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.products-sale figure{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.products-sale figure figcaption{
+    color: grey;
+    font-size: 1.4em;
+}
+.products-sale figure button{
+    border: none;
+    background-color: black;
+    padding: 6px;
+    color: white;
+    border-radius: 4px;
+    
+}
+.products-sale figure button:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+.actions{
+    display: flex;
+    border: none;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+.actions button{
+    border-radius: 3px;
+    padding: 6px;
+    margin-left: 10px;
+}
+.actions button:hover{
+    background-color: gray;
+}
+.actions input{
+    border-radius: 3px;
+    padding: 6px;
+    border: none;
+}
+.filters select{
+    color: black;
+    border: none;
+    background-color: white;
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    margin-left: 3px;
+    
+}  
+
+/* Productos Venta */
+.Productos-Venta{
+    padding:20px 30px;
+    display: inline-block;
+    flex-wrap: nowrap
+}
+.Productos-Venta figure{
+    width:100%;
+    margin-bottom: 20px;
+    padding:0 20px;
+}
+.Productos-Venta figure figcaption{
+    color: grey;
+    font-size: 1.4em;
+    
+    
+}
+.Productos-Venta figure button{
+    border: none;
+    background-color:black;
+    padding: 6px;
+    color:white;
+    border-radius:4px;
+}
+.Productos-Venta figure button:hover{
+    cursor:pointer;
+    background-color:grey;
+}
+
+/* :hover */
+nav ul li a:hover{
+    color: grey;
+}
+/* :visited */
+nav ul li a:visited{
+    color: violet;
+}
+
+/* active */
+nav ul li a:active{
+    color: white;
+}
+
+/*  INICIA RESPONSIVE */
+@media (width < 768px){
+    .products-sale figure{
+        width: 100% ;
+    }
+    .products-sale figure figcaption{
+        display: block;
+    }
+    .products-sale figure button{
+        width: 100%;
+    }
+    .Productos-Venta figure{
+        width: 100%;
+    }
+    .Productos-Venta figure button{
+        width: 100%;
+    }
+    .actions{
+        justify-content: center;
+    }
+    .filters select{
+        width: 100%;
+        padding: 6px;
+    }
+}
+
+    
