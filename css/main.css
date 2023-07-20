@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400&display=swap");
+* {
+  font-family: "Red Hat Text", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/background5.jpg.png);
+  text-align: center;
+}
+
+/* Selector de eriquetas  */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+/* selector descendente */
+nav {
+  background-color: black;
+  background-size: cover;
+  padding: 6px 30px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+nav ul li a:hover {
+  color: grey;
+}
+nav ul li a:visited {
+  color: violet;
+}
+nav ul li a:active {
+  color: white;
+}
+
+nav img {
+  height: 100px;
+  margin: auto;
+}
+
+header img {
+  width: 100%;
+}
+
+.botonera {
+  background-color: black;
+}
+.botonera a {
+  color: white;
+}
+.botonera img {
+  width: 150px;
+}
+@media (min-width: 280px) and (max-width: 340px) {
+  .botonera img {
+    width: 98px;
+  }
+}
+
+footer {
+  background-color: black;
+  padding: 6px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer img {
+  height: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  background-color: black width;
+}
+
+/* Productos Destacados */
+.products-sale {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-sale figure {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.products-sale figure figcaption {
+  color: grey;
+  font-size: 1.4em;
+}
+.products-sale figure button {
+  border: none;
+  background-color: black;
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+}
+.products-sale figure button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.actions {
+  display: flex;
+  border: none;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.actions button {
+  border-radius: 3px;
+  padding: 6px;
+  margin-left: 10px;
+}
+.actions button:hover {
+  background-color: grey;
+}
+.actions button input {
+  border-radius: 3px;
+  padding: 6px;
+  border: none;
+}
+
+.filters select {
+  color: grey;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: flex;
+  margin-left: 3px;
+}
+
+/*  INICIA RESPONSIVE */
+@media (width < 768px) {
+  .products-sale figure {
+    width: 100%;
+  }
+  .products-sale figure figcaption {
+    display: block;
+  }
+  .products-sale figure figcaption button {
+    width: 100%;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .filters select {
+    width: 100%;
+    padding: 6px;
+  }
+}
+/* Productos  */
+.container {
+  background-color: black width;
+}
+
+.products-Venta {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.products-Venta figure {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.products-Venta figure figcaption {
+  color: grey;
+  font-size: 1.4em;
+}
+.products-Venta figure button {
+  border: none;
+  background-color: black;
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+}
+.products-Venta figure button:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.actions {
+  display: flex;
+  border: none;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+.actions button {
+  border-radius: 3px;
+  padding: 6px;
+  margin-left: 10px;
+}
+.actions button:hover {
+  background-color: grey;
+}
+.actions button input {
+  border-radius: 3px;
+  padding: 6px;
+  border: none;
+}
+
+.filters select {
+  color: grey;
+  border: none;
+  background-color: white;
+  margin-bottom: 10px;
+  font-size: 1em;
+  display: flex;
+  margin-left: 3px;
+}
+
+/*  INICIA RESPONSIVE */
+@media (width < 768px) {
+  .products-sale figure {
+    width: 100%;
+  }
+  .products-sale figure figcaption {
+    display: block;
+  }
+  .products-sale figure figcaption button {
+    width: 100%;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .filters select {
+    width: 100%;
+    padding: 6px;
+  }
+}
+.carousel {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.carousel img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carousel figcaption {
+  color: grey;
+  font-size: 1.4em;
+  justify-content: center;
+}
+.carousel figcaption button {
+  border: none;
+  background-color: black;
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+}
+.carousel figcaption button:hover {
+  background-color: grey;
+}
+
+.carousel {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.carousel img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carousel figcaption {
+  color: grey;
+  font-size: 1.4em;
+  justify-content: center;
+}
+.carousel figcaption button {
+  border: none;
+  background-color: black;
+  padding: 6px;
+  color: white;
+  border-radius: 4px;
+}
+.carousel figcaption button:hover {
+  background-color: grey;
+}
+
+/*# sourceMappingURL=main.css.map */

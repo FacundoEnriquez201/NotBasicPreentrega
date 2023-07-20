@@ -1,0 +1,88 @@
+.container{
+           background-color: black
+           width;
+}
+
+/* Productos Destacados */
+.products-sale{
+               padding: 20px 30px;
+               display: flex;
+               flex-wrap: wrap;
+    figure{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0 20px;
+    figcaption{
+               color: $mainColor;
+               font-size: $textLg;
+              }
+    button{
+           border: none;
+           background-color: $keyColor;
+           padding: 6px;
+           color: $secondaryColor;
+           border-radius: 4px;
+        &:hover{
+                cursor: pointer;
+                background-color: $mainColor;
+
+               }
+
+          }
+
+    
+    }   
+}
+
+.actions{
+    display: flex;
+    border: none;
+    justify-content: flex-end;
+    margin: 10px 0;
+    button{
+        border-radius: 3px;
+        padding: 6px;
+        margin-left: 10px;
+        &:hover{
+                background-color: $mainColor;
+                
+               }
+    input{
+        border-radius: 3px;
+        padding: 6px;
+        border: none;
+         }
+          }
+}
+
+.filters select{
+    color: $mainColor;
+    border: none;
+    background-color: $secondaryColor;
+    margin-bottom: 10px;
+    font-size: 1em;
+    display: flex;
+    margin-left: 3px;
+    
+}  
+
+/*  INICIA RESPONSIVE */
+@media (width < 768px){
+    .products-sale figure{
+        width: 100% ;
+        figcaption{
+            display: block;
+
+        button{
+            width: 100%;
+               }    
+        }
+    }
+    .actions{
+        justify-content: center;
+    }
+    .filters select{
+        width: 100%;
+        padding: 6px;
+    }
+}

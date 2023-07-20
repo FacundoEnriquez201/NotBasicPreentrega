@@ -1,0 +1,30 @@
+// Capsula Fresh//
+.carousel{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       }
+    figcaption{
+        color: $mainColor;
+        font-size: $textLg;
+        justify-content: center;
+    button{
+        border: none;
+        background-color:$keyColor;
+        padding: 6px;
+        color:$secondaryColor;
+        border-radius:4px;
+        &:hover{
+                background-color: $mainColor; 
+               }
+         }
+     }
+}
+    

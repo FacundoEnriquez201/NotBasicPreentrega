@@ -35,8 +35,7 @@ nav{
    position: fixed;
    left: 0;
    top: 0;
-   flex
-   display: flex: ;
+   display: flex;
    flex-direction:row;
    justify-content:space-between;
    align-items:center ;
@@ -145,7 +144,7 @@ footer{
 
 .container{
     background-color: black
-    width: ;
+    width;
 }
 
 /* Productos Destacados */
