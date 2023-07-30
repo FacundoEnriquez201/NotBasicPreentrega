@@ -5,27 +5,27 @@
 }
 
 
-.products-Venta{
+.productos-Venta{
     padding: 20px 30px;
-    display: flex;
-    flex-wrap: wrap;
-figure{
- width: 100%;
- margin-bottom: 20px;
- padding: 0 20px;
-figcaption{
-    color: $mainColor;
-    font-size: $textLg;
+    display: inline-block;
+    flex-wrap: nowrap;
+    figure{
+           width: 100%;
+           margin-bottom: 20px;
+           padding: 0 20px;
+    figcaption{
+               color: $mainColor;
+               font-size: $textLg;
    }
-button{
-border: none;
-background-color: $keyColor;
-padding: 6px;
-color: $secondaryColor;
-border-radius: 4px;
-&:hover{
-     cursor: pointer;
-     background-color: $mainColor;
+    button{
+           border: none;
+           background-color: $keyColor;
+           padding: 6px;
+           color: $secondaryColor;
+           border-radius: 4px;
+           &:hover{
+                   cursor: pointer;
+                   background-color: $mainColor;
        }
      }
   }   

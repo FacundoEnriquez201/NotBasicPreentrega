@@ -188,28 +188,28 @@ footer img {
   background-color: black width;
 }
 
-.products-Venta {
+.productos-Venta {
   padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
 }
-.products-Venta figure {
+.productos-Venta figure {
   width: 100%;
   margin-bottom: 20px;
   padding: 0 20px;
 }
-.products-Venta figure figcaption {
+.productos-Venta figure figcaption {
   color: grey;
   font-size: 1.4em;
 }
-.products-Venta figure button {
+.productos-Venta figure button {
   border: none;
   background-color: black;
   padding: 6px;
   color: white;
   border-radius: 4px;
 }
-.products-Venta figure button:hover {
+.productos-Venta figure button:hover {
   cursor: pointer;
   background-color: grey;
 }
